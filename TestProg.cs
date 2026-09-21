@@ -63,10 +63,11 @@ namespace Test
                 Random rand = new Random();
                 char user, comp;
                 int number;
+                string temp;
 
                 Console.WriteLine("Please pick either R, P or S: ");
-                user = (Console.ReadLine()).ToUpper();
-                user = user.ToUpper();
+                temp = (Console.ReadLine()).ToUpper();
+                user = Convert.ToChar(temp);
                 Console.WriteLine($"{user}");
                 user = Convert.ToChar(user);
                 number = rand.Next(3);
