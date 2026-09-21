@@ -49,11 +49,12 @@ namespace Test
                     again = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                 }
-
-                Alex();
-                Seth();
-                Console.ReadLine();
             }
+            Alex();
+            Seth();
+            Console.WriteLine("Press ENTER key to close");
+            Console.ReadLine();
+            
         }
 
         public static void Alex()
@@ -120,8 +121,6 @@ namespace Test
             {
                 Console.WriteLine("You tied");
             }
-            Console.WriteLine("Press ENTER key to close");
-            Console.ReadLine();
         }
     }
 }
