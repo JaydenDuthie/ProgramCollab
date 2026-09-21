@@ -4,8 +4,17 @@ namespace Test
 {
     internal class TestProg
     {
-        private void Alex()
+        static void Main()
         {
+            Console.WriteLine("Hello, World!");
+
+            Alex();
+            Seth();
+        }
+
+        public static void Alex()
+        {
+            {
             Random rand = new Random();
             char user, comp;
             int number;
@@ -43,6 +52,11 @@ namespace Test
             }
             Console.WriteLine("Press ENTER key to close");
             Console.ReadLine();
+        }
+
+        public static void Seth()
+        {
+            //
         }
     }
 }
