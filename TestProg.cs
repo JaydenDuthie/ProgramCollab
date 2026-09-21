@@ -64,7 +64,10 @@ namespace Test
                 int number;
 
                 Console.WriteLine("Please pick either R, P or S: ");
-                user = Convert.ToChar(Console.ReadLine());
+                user = (Console.ReadLine()).ToUpper();
+                user = user.ToUpper();
+                Console.WriteLine($"{user}");
+                user = Convert.ToChar(user);
                 number = rand.Next(3);
                 switch (number)
                 {
@@ -79,7 +82,7 @@ namespace Test
                         break;
                 }
                 Console.WriteLine($"The computer has chosen {comp}");
-                if (((user == 'R') && (comp == 'S')) || ((user == 'S') && (comp == 'p')) || ((user == 'P') && (comp == 'R')))
+                if (((user == 'R') && (comp == 'S')) || ((user == 'S') && (comp == 'P')) || ((user == 'P') && (comp == 'R')))
                 {
                     Console.WriteLine("User wins");
                 }
