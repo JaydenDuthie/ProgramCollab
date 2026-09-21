@@ -10,7 +10,7 @@ namespace Test
             char again = 'y';
             Console.WriteLine("Hello, Please enter your age (in digits): ");
             int UsrAge = Convert.ToInt32(Console.ReadLine());
-            if (UsrAge <= 18)
+            if (UsrAge < 18)
             {
                 Console.WriteLine("You are too young to play, you must be 18 or older. Goodbye!");
                 again = 'n';
@@ -49,11 +49,11 @@ namespace Test
                     again = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
                 }
-
-                Alex();
-                Seth();
-                Console.ReadLine();
             }
+
+            Alex();
+            Seth();
+            Console.ReadLine();
         }
 
         public static void Alex()
